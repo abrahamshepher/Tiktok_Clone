@@ -10,7 +10,7 @@ import { CiKeyboard } from "react-icons/Ci";
 import { MdOutlineDarkMode } from "react-icons/Md";
 import Feedback from "../pages/Feedback";
 import { useRouter } from "next/router";
-import Home from "../pages/Home";
+import HomePage from "../pages/HomePage";
 function Header() {
   const router = useRouter();
   const handleNavigation = () => {
@@ -25,7 +25,7 @@ function Header() {
       <div>
         <div
           className="relative flex items-center h-27 cursor-pointer my-auto"
-          onClick={() => router.push("/Home")}
+          onClick={() => router.push("/HomePage")}
         >
           <Image
             src="/tt.jpg"

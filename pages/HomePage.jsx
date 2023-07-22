@@ -4,14 +4,14 @@ import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import About from "../Constants/About";
 import Video from "../Components/Video";
-function Home() {
+function HomePage() {
   return (
     <div>
       <Header />
       {/* main */}
       <div className="grid grid-cols-3 gap-4 w-[100%]  ">
         {/* left */}
-        <div className="w-[60%] flex flex-wrap mt-4 pl-4 px-4 gap-5  ">
+        <div className="w-[40%] flex flex-wrap mt-4 pl-4 px-4 gap-6  ">
           {/* //HomeIcon */}
           <div className="image-with-text">
             <Image
@@ -60,10 +60,10 @@ function Home() {
             }
           `}</style>
           <div>Log in to follow creators, like videos, and view comments.</div>
-          <div className="align-bottom text-[#FD5B61] text-[20px] border-[2px] border-red-400 h-13 px-5 py-2 w-80 block cursor-pointer ">
+          <div className="align-bottom text-[#FD5B61] text-[20px] border-[2px] border-red-400 h-13 px-5 py-2 w-60 block cursor-pointer ">
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Login{" "}
           </div>
-          <div className="cursor-pointer mt-[90%] flex flex-wrap text-sm text-gray-500">
+          <div className="cursor-pointer mt-[100%] flex flex-wrap text-sm text-gray-500">
             <div>
               {" "}
               <About
@@ -207,4 +207,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

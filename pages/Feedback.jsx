@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import ArrowButton from "../Constants/ArrowButton";
 import Arrowbtn from "../Constants/Arrowbtn";
-import Home from "../pages/Home";
+import Home from "./HomePage";
 
 function Feedback() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(true);

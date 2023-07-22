@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
-import Home from "../pages/Home";
+import HomePage from "./HomePage";
 export default function Home() {
   return (
     <div>
@@ -8,7 +8,7 @@ export default function Home() {
         <title>Tiktok</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header />
+      <HomePage />
       {/* Banner */}
     </div>
   );
