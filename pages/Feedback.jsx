@@ -4,14 +4,11 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import ArrowButton from "../Constants/ArrowButton";
 import Arrowbtn from "../Constants/Arrowbtn";
-import Home from "./HomePage";
+import HomePage from "../pages/HomePage";
 
 function Feedback() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(true);
   const router = useRouter();
-  const handleNavigation = () => {
-    router.push("/Feedback");
-  };
 
   return (
     <div className="w-screen">
@@ -44,9 +41,7 @@ function Feedback() {
                   </div>
                   <div
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer"
-                    onClick={() => {
-                      handleNavigation();
-                    }}
+                    onClick={() => {}}
                   >
                     {/* <div className="flex items-center gap-2  text-gray-800 ">
                       Creator tools

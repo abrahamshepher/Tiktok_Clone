@@ -4,18 +4,15 @@ import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/solid";
 import { AiOutlinePlus } from "react-icons/ai";
 import { HiDotsVertical } from "react-icons/hi";
-import { TbLanguageKatakana } from "react-icons/Tb";
-import { RxQuestionMarkCircled } from "react-icons/Rx";
-import { CiKeyboard } from "react-icons/Ci";
-import { MdOutlineDarkMode } from "react-icons/Md";
+import { TbLanguageKatakana } from "react-icons/tb";
+import { RxQuestionMarkCircled } from "react-icons/rx";
+import { CiKeyboard } from "react-icons/ci";
+import { MdOutlineDarkMode } from "react-icons/md";
 import Feedback from "../pages/Feedback";
 import { useRouter } from "next/router";
 import HomePage from "../pages/HomePage";
 function Header() {
   const router = useRouter();
-  const handleNavigation = () => {
-    router.push("/Feedback");
-  };
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
