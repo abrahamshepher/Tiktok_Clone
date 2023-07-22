@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../Components/Header";
+import Headers from "../Components/Headers";
 import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import About from "../Constants/About";
 function HomePage() {
   return (
     <div>
-      <Header />
+      <Headers />
       {/* main */}
       <div className="grid grid-cols-3 gap-4 w-[100%]  ">
         {/* left */}

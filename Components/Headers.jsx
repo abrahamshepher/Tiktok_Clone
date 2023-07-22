@@ -19,7 +19,7 @@ function Header() {
       {/* Left */}
       <div>
         <div className="relative flex items-center h-27 cursor-pointer my-auto">
-          <div onClick={() => router.push("/HomePage")}>
+          <div onClick={() => router.push("/Homepage")}>
             <Image
               src="/tt.jpg"
               width={170}

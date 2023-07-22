@@ -1,5 +1,5 @@
 import Head from "next/head";
-import HomePage from "../pages/HomePage";
+import Homepage from "../pages/Homepage";
 export default function Home() {
   return (
     <div>
@@ -7,7 +7,7 @@ export default function Home() {
         <title>Tiktok</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <HomePage />
+      <Homepage />
       {/* Banner */}
     </div>
   );

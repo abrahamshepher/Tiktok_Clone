@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Headers from "../Components/Headers";
 import { useState } from "react";
 import { useRouter } from "next/router";
 import ArrowButton from "../Constants/ArrowButton";
@@ -12,7 +12,7 @@ function Feedback() {
   return (
     <div className="w-screen">
       <div className="w-full max-w-5xl mx-auto">
-        <Header />
+        <Headers />
         <div className="my-12 text-4xl font-bold cursor-pointer ">
           <h1>Feedback and help</h1>
           <h6 className="text-[18px] my-1 mt-1 px-1 font-thin text-gray-500 cursor-pointer">
