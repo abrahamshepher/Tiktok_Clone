@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Homepage from "../Homepage";
+import Homepage from "../pages";
 export default function Home() {
   return (
     <div>
