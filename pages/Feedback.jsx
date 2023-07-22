@@ -177,9 +177,7 @@ function Feedback() {
                     </div>
                     <div
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                      onClick={() => {
-                        handleNavigation();
-                      }}
+                      onClick={() => {}}
                     >
                       <Arrowbtn
                         ButtonText={" This phone number is already registered"}

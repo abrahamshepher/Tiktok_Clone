@@ -8,9 +8,7 @@ import { TbLanguageKatakana } from "react-icons/tb";
 import { RxQuestionMarkCircled } from "react-icons/rx";
 import { CiKeyboard } from "react-icons/ci";
 import { MdOutlineDarkMode } from "react-icons/md";
-import Feedback from "../pages/Feedback";
 import { useRouter } from "next/router";
-import HomePage from "../pages/HomePage";
 function Header() {
   const router = useRouter();
 
@@ -20,20 +18,19 @@ function Header() {
     <header className="sticky top-0 z-50 grid-cols-3 shadow-md outline-2 py-1 px-1">
       {/* Left */}
       <div>
-        <div
-          className="relative flex items-center h-27 cursor-pointer my-auto"
-          onClick={() => router.push("/HomePage")}
-        >
-          <Image
-            src="/tt.jpg"
-            width={170}
-            height={42}
-            objectFit="contain"
-            objectPosition="left"
-            alt="Image not found"
-            quality={100}
-            backgroundcolor="red"
-          />
+        <div className="relative flex items-center h-27 cursor-pointer my-auto">
+          <div onClick={() => router.push("/HomePage")}>
+            <Image
+              src="/tt.jpg"
+              width={170}
+              height={42}
+              objectFit="contain"
+              objectPosition="left"
+              alt="Image not found"
+              quality={100}
+              backgroundcolor="red"
+            />
+          </div>
           {/* Middle */}
           <div className="flex grow justify-center w-full my-1">
             <div className="flex group items-center bg-slate-100 w-[500px] border-[2px] rounded-full border-slate-100 hover:border-slate-300 pl-6 justify-between overflow-hidden">

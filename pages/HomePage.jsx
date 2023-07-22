@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import About from "../Constants/About";
-import Video from "../Components/Video";
 function HomePage() {
   return (
     <div>
@@ -21,7 +20,9 @@ function HomePage() {
               height={0}
               alt="arrow"
             />
-            <p className="font-bold text-[18px] text-[#FD5B61]">For You</p>
+            <p className="font-bold text-[18px] text-[#FD5B61] cursor-pointer">
+              For You
+            </p>
           </div>
           {/* //userIcon */}
           <div className="image-with-text w-80">
@@ -32,7 +33,7 @@ function HomePage() {
               height={0}
               alt="arrow"
             />
-            <p className="font-bold text-[18px] ">Following</p>
+            <p className="font-bold text-[18px] cursor-pointer ">Following</p>
           </div>
           {/* //exploreicon */}
           <div className="image-with-text">
@@ -63,7 +64,7 @@ function HomePage() {
           <div className="align-bottom text-[#FD5B61] text-[20px] border-[2px] border-red-400 h-13 px-5 py-2 w-60 block cursor-pointer ">
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Login{" "}
           </div>
-          <div className="cursor-pointer mt-[100%] flex flex-wrap text-sm text-gray-500">
+          <div className="cursor-pointer mt-[130%] flex flex-wrap text-sm text-gray-500">
             <div>
               {" "}
               <About
