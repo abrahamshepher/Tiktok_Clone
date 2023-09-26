@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import ReactModal from "./Modal";
 import Image from "next/image";
 import { SearchIcon } from "@heroicons/react/solid";
 import { AiOutlinePlus } from "react-icons/ai";
@@ -11,11 +11,17 @@ import { MdOutlineDarkMode } from "react-icons/md";
 import { useRouter } from "next/router";
 function Header() {
   const router = useRouter();
-
+  const [showModal, setShowModal] = useState(false);
+  const onTrueShow = () => {
+    setShowModal(true);
+  };
+  const onFalseShow = () => {
+    setShowModal(false);
+  };
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className="">
+    <>
       {/* Left */}
       <div className="  sticky top-0 z-50 flex flex-wrap shadow-md outline-2 py-1 px-1 w-100 cursor-pointer w-[100%] ">
         <div onClick={() => router.push("/Homepage")}>
@@ -48,7 +54,10 @@ function Header() {
         <div className="flex items-center space-x-4 justify-end text-gray-400">
           <div className="rounded-md x cursor-pointer px-4 py-2 border-[1px] border-slate-300 flex items-center gap-2 text-black font-bold justify-center">
             <AiOutlinePlus className="" />
-            Upload
+            <button onClick={onTrueShow}>Upload</button>
+            {showModal && (
+              <ReactModal showModal={showModal} setShowModal={setShowModal} />
+            )}
           </div>
           <div className="rounded-md x cursor-pointer px-4 py-2 border-[1px] border-slate-300 flex items-center gap-2 text-white font-bold justify-center bg-[#FD5B61] w-[100px]">
             Login
@@ -121,7 +130,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
 

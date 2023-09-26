@@ -3,6 +3,7 @@ import Headers from "../Components/Headers";
 import Image from "next/image";
 import Router, { useRouter } from "next/router";
 import About from "../Constants/About";
+import ReactModal from "../Components/Modal";
 function Homepage() {
   return (
     <div>
